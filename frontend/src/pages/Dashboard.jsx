@@ -19,7 +19,7 @@ function Dashboard() {
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
 
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+  const API_URL = import.meta.env.VITE_API_URL || "https://sweets-app.onrender.com";
   const token = localStorage.getItem("token"); // optional if auth
 
   // Fetch sweets from backend
