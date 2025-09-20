@@ -39,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     const fetchSweets = async () => {
       try {
-        const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+        const API_URL = import.meta.env.VITE_API_URL || "https://sweets-app.onrender.com";
         const res = await axios.get(`${API_URL}/sweets`);
         setSweets(res.data);
       } catch (err) {
