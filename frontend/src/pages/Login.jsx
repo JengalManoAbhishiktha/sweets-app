@@ -17,7 +17,7 @@ function Signin() {
   const [showPassword, setShowPassword] = useState(false); // 👁 state
   const [loading, setLoading] = useState(false);
 
-  const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3000";
+  const API_URL = import.meta.env.VITE_API_URL || "https://sweets-app.onrender.com";
 
   const handleLogin = async () => {
     if (!email || !password) {
